@@ -1,8 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <h1 text-20 font-bold op-80 c-gray-600>Hi~</h1>
-    <span>欧哈哟, 欧尼酱！</span>
+  <div group data-set="open">
+    <div group-hover:c-red class="data-[set=open]:c-white">31231</div>
   </div>
 </template>
