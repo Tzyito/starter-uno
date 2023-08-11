@@ -3,13 +3,27 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/starter-uno.umd.cjs",
+  "module": "./dist/starter-uno.js",
+  "exports": {
+    ".": {
+      "import": "./dist/starter-uno.js",
+      "require": "./dist/starter-uno.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "@types/node": "^20.4.2",
+    "vite-plugin-singlefile": "^0.13.5",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
